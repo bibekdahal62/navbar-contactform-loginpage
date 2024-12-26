@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home page css */
+
+.navigation{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    background-color: rgb(69, 69, 69);
+}
+
+.navigation li a{
+    display: block;
+    padding: 10px 15px 10px 15px;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.navigation li a.active{
+    background-color: rgb(52, 0, 0);
+}
+
+.navigation li a:not(.active):hover{
+    background-color: rgb(41, 41, 41);
+}
+
+/* contact us page css */
+
+.contact-form{
+    margin: 30px 0px 0px 50px;
+    padding: 20px 20px 20px 20px;
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgb(182, 182, 182, 0.5);
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    background-color: antiquewhite;
+}
+
+.contact-form label{
+    font-size: 20px;
+}
+
+
+.contact-form input{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.contact-form textarea{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width: 357px;
+    max-height: 300px;
+    padding: 10px 10px 10px 10px;
+    outline: none;
+    font-size: 15px;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.contact-form button#submit, .contact-form button#reset{
+    width: 65px;
+    margin: 10px 10px 10px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(50, 158, 0);
+    padding: 10px;
+    color: white;
+    font-size: 14px;
+
+}
+
+.contact-form button#submit:hover, .contact-form button#reset:hover{
+    background-color: rgb(57, 179, 1);
+    color: rgb(228, 227, 227);
+}
+
+input[type="number"]::-webkit-inner-spin-button{
+    display: none;
+}
+
+/* login page css */
+
+
+.container-login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: hsl(0, 0%, 96%, 0.8);
+}
+
+.login-form{
+    width: 400px;
+    border: 1px solid antiquewhite;
+    padding: 20px 20px 0px 20px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    box-shadow: 1px 1px 3px hsl(0, 0%, 0%, 0.1), -1px -1px 3px hsl(0, 0%, 0%, 0.1);
+}
+
+.login-form h1{
+    text-align: center;
+    margin: 0px 10px 20px 10px;
+}
+
+.division-login{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.login-form input{
+    width: 100%;
+    height: 100%;
+    border: 1px solid hsl(0, 0%, 80%, 0.5);
+    border-radius: 10px;
+    outline: none;
+    font-size: 16px;
+    padding: 10px 40px 10px 10px;
+}
+
+.fa-solid{
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+}
+
+.login-form button{
+    width: 100%;
+    height: 40px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.login-form .forgot-password{
+    text-align: center;
+    margin: 20px 0px 20px 0px;
+}
+
+.login-form .forgot-password a{
+    text-decoration: none;
+    font-size: 16px;
+    color: blue;
+}
+
+.login-form .forgot-password a:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 200);
+}
+
+.login-form .create-account{
+    text-align: center;
+    margin: 0px 0px 20px 0px;
+    font-size: 16px;
+}
+
+.login-form .create-account a{
+    text-decoration: none;
+    color: blue;
+}
+
+.login-form .create-account a:hover{
+    text-decoration: underline;
+    color: rgb(0, 0, 200);
+}
